@@ -45,9 +45,6 @@
   --font-serif: 'Young Serif', serif;
   --font-sans: 'Outfit', sans-serif;
 
-  /* РАЗМЕРЫ ТЕКСТА (Tamaño de texto) */
-  --font-size-paragraph: 16px;
-
   /* LAYOUT - ТОЧКИ РАЗБИЕНИЯ (Breakpoints) */
   --mobile-width: 375px;
   --desktop-width: 1440px;
@@ -58,44 +55,76 @@
    Это "очистка листа" перед началом работы
    ======================================== */
 
-/* Убираем стандартные отступы со всех элементов 
-* {
+/* Убираем стандартные отступы со всех элементов */
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+} 
 
 /* Базовые стили для всей страницы */
 body {
   font-family: var(--font-sans);
   line-height: 1.5;
-  color: var(--color-stone-900);
-  font-size: var(--font-size-paragraph);
-}
-
-/* ========================================
-   ОСНОВНЫЕ СТИЛИ
-   Начни добавлять свои стили ниже
-   ======================================== */
-
-/* Классы для разных весов шрифтов (pesos de fuentes) */
-.text-regular {
-  font-family: var(--font-sans);
   font-weight: 400;
+  color: var(--color-stone-600);
+  font-size: 16px;
 }
 
-.text-semibold {
-  font-family: var(--font-sans);
-  font-weight: 600;
-}
-
-.text-bold {
-  font-family: var(--font-sans);
-  font-weight: 700;
-}
-
-/* Класс для заголовков (títulos) */
-.heading {
+h1 {
+  font-size: 32px;
   font-family: var(--font-serif);
+  margin-bottom: 16px;
   font-weight: 400;
+  color: black;
 }
+
+h2 {
+  font-size: 28px;
+  font-family: var(--font-serif);
+  margin-bottom: 16px;
+  font-weight: 400;
+  color: var(--color-brown-800);
+}
+
+aside {
+    background-color: var(--color-rose-50);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+aside h3 {
+  font-size: 20px;
+  font-family: var(--font-sans);
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--color-rose-800);
+}
+
+aside ul li::marker {
+  color: var(--color-rose-800);
+  font-size: 12px; 
+}
+
+
+ul li, ol li {
+  padding-left: 12px;  /* расстояние текста от булета */
+  margin-bottom: 8px;
+}
+
+ul li::marker {
+  color: var(--color-brown-800);
+  font-size: 12px; 
+}
+
+ol li::marker {
+  color: var(--color-brown-800);
+  font-weight: 600;
+  font-size: 14px; 
+}
+
+/* жирный теперь полужирный */
+
+  strong {
+  font-weight: 600;
+} 
