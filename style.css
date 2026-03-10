@@ -1,0 +1,101 @@
+/* ========================================
+   ПОДКЛЮЧЕНИЕ ШРИФТОВ (Fuentes)
+   ======================================== */
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('./assets/fonts/young-serif/static/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/static/Outfit-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/static/Outfit-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+/* ========================================
+   ПЕРЕМЕННЫЕ CSS (Variables de CSS)
+   ======================================== */
+
+:root {
+  /* ЦВЕТА (Colores) */
+  --color-white: hsl(0, 0%, 100%);
+  --color-stone-100: hsl(30, 54%, 90%);
+  --color-stone-150: hsl(30, 18%, 87%);
+  --color-stone-600: hsl(30, 10%, 34%);
+  --color-stone-900: hsl(24, 5%, 18%);
+  --color-brown-800: hsl(14, 45%, 36%);
+  --color-rose-800: hsl(332, 51%, 32%);
+  --color-rose-50: hsl(330, 100%, 98%);
+
+  /* ШРИФТЫ (Fuentes) */
+  --font-serif: 'Young Serif', serif;
+  --font-sans: 'Outfit', sans-serif;
+
+  /* РАЗМЕРЫ ТЕКСТА (Tamaño de texto) */
+  --font-size-paragraph: 16px;
+
+  /* LAYOUT - ТОЧКИ РАЗБИЕНИЯ (Breakpoints) */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+}
+
+/* ========================================
+   RESET CSS
+   Это "очистка листа" перед началом работы
+   ======================================== */
+
+/* Убираем стандартные отступы со всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Базовые стили для всей страницы */
+body {
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  color: var(--color-stone-900);
+  font-size: var(--font-size-paragraph);
+}
+
+/* ========================================
+   ОСНОВНЫЕ СТИЛИ
+   Начни добавлять свои стили ниже
+   ======================================== */
+
+/* Классы для разных весов шрифтов (pesos de fuentes) */
+.text-regular {
+  font-family: var(--font-sans);
+  font-weight: 400;
+}
+
+.text-semibold {
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+.text-bold {
+  font-family: var(--font-sans);
+  font-weight: 700;
+}
+
+/* Класс для заголовков (títulos) */
+.heading {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
