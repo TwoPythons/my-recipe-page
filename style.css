@@ -113,7 +113,6 @@ aside h3 {
   margin-bottom: 8px;
   font-weight: 600;
   color: var(--color-rose-800);
-  padding-left: 0%;
 }
 
 aside ul li::marker {
@@ -158,7 +157,6 @@ ol li::marker {
   margin: 0 40px;
   border-bottom: 1px solid var(--color-stone-150);
 }
-
 
 .nutrition {
   margin: 20px 40px;
@@ -215,11 +213,11 @@ img {
     max-width: 50%;            /* ограниченная ширина */
     margin: 60px auto;                             /* центрируем */
     border-radius: 20px;                        /* закругленные углы */
-                          
   }
 
-img {
-  width: calc(100% - 80px);  /* 100% минус 40px слева и 40px справа */
-  margin: 40px 40px 0 40px;
-  border-radius: 10px;
+  img {
+    width: calc(100% - 80px);  /* 100% минус 40px слева и 40px справа */
+    margin: 40px 40px 0 40px;
+    border-radius: 10px;
+  }
 }
