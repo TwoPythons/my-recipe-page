@@ -44,10 +44,6 @@
   /* ШРИФТЫ (Fuentes) */
   --font-serif: 'Young Serif', serif;
   --font-sans: 'Outfit', sans-serif;
-
-  /* LAYOUT - ТОЧКИ РАЗБИЕНИЯ (Breakpoints) */
-  --mobile-width: 375px;
-  --desktop-width: 1440px;
 }
 
 /* ========================================
@@ -76,15 +72,17 @@ body {
    ======================================== */
 
 h1 {
-  font-size: 32px;
+  font-size: 40px;
   font-family: var(--font-serif);
   margin: 20px 0;
   font-weight: 600;
   color: black;
+  line-height: 1;
+  padding-top: 10px;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 30px;
   font-family: var(--font-serif);
   margin-bottom: 20px;
   font-weight: 600;
@@ -107,7 +105,6 @@ aside {
     padding: 20px;
     margin: 0 40px;
     border-radius: 8px;
-
 }
 
 aside h3 {
@@ -202,4 +199,27 @@ tr:last-child {
 
 img {
   width: 100%;
+}
+
+/* ========================================
+   MEDIA QUERIES - DESKTOP
+   ======================================== */
+
+@media (min-width: 768px) {
+  html {
+    background-color: var(--color-stone-100);  /* фон вокруг */
+  }
+
+  body {
+    background-color: var(--color-white);      /* белый прямоугольник */
+    max-width: 50%;            /* ограниченная ширина */
+    margin: 60px auto;                             /* центрируем */
+    border-radius: 20px;                        /* закругленные углы */
+                          
+  }
+
+img {
+  width: calc(100% - 80px);  /* 100% минус 40px слева и 40px справа */
+  margin: 40px 40px 0 40px;
+  border-radius: 10px;
 }
